@@ -1,18 +1,7 @@
-html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-  }
-  
-  /* Sections
-     ========================================================================== */
-  
-  /**
-   * Remove the margin in all browsers.
-   */
-  
-  body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #1A0A03;
   }
   
   /**
@@ -28,9 +17,17 @@ html {
    * `article` contexts in Chrome, Firefox, and Safari.
    */
   
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+  h1,h2,h3,h4,h5,h6,p {
+    margin:0;
+  }
+
+  button {
+    padding: 16px 30px;
+    background: #EE5514;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
   }
   
   /* Grouping content
@@ -347,6 +344,10 @@ html {
     width: 1190px;
 }
 
+.content {
+  width: 792px;
+}
+
 /* Start header */
 
 .header {
@@ -372,14 +373,6 @@ html {
     margin-left: auto;
 }
 
-.header-button button {
-    padding: 16px 30px;
-    background: #EE5514;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-}
-
 /* End header */
 
 .hero {
@@ -387,3 +380,81 @@ html {
     height: 100vh;
     background-repeat: no-repeat;
 }
+
+.hero-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-title h1 {
+  padding: 72px 326px 20px 0;
+  font-family: 'Source Serif Pro';
+  font-size: 62px;
+}
+
+.hero-title span {
+  color: #EE5514;
+}
+
+.hero-subtitle {
+  padding-bottom: 64px;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.hero-image {
+  padding-top:32px;
+}
+
+
+.hero-icon button {
+  padding-left: 34px;
+  padding-top: 198px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hero-select {
+  padding: 26px 34px 52px 52px;
+  background-color: #fff;
+  box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
+  border-radius: 5px;
+}
+
+.select-items {
+  display: flex;
+}
+
+
+.hero-select__item h2{
+  padding-bottom: 10px;
+  opacity: 0.7;
+}
+
+hr{ 
+  margin: 12px 46px 6px 46px;
+  border: none;
+  border-left: 1px solid #EE5514;
+  height: 42px;
+  width: 1px;       
+}
+
+.hero-select__item button {
+  margin: 6px 0px 0px 40px;
+}
+
+select {
+  border: none;
+  color: #EE5514;
+}
+#item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1A0A03;
+}
+
+
+
